@@ -17,8 +17,8 @@ O projeto consiste em um formulário onde podem ser adicionados variáveis de um
 Durante a construção do projeto houveram algumas problemáticas em relação ao uso do DOM para retornar os valores da classe `Aluno` na tabela.  
 
 Dentre os erros já reparados durante a construção, o que persistiu foi o triste problema do carregamento da página. 
- 
-Tentei utilizar formas diferentes de construção para o acionamento do botão que faria o cálculo, mas em todos os testes era necessário dar um F5 na página para carregar os novos valores da classe.  
+
+>Tentei utilizar formas diferentes de construção para o acionamento do botão que faria o cálculo, mas em todos os testes era necessário dar um F5 na página para carregar os novos valores da classe.  
 
 Devido o fim do prazo para entrega da atividade, não foi possível realizar novas atualizações de reparo na aplicação, tendo de ser entregue dessa forma.
 
