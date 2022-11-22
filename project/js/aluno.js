@@ -45,15 +45,16 @@ let toTable = document.querySelector("#build-table")
 // }
 
 calcButton.addEventListener('click', function(event){  // Ler click no botão Confirmar
+    event.preventDefault()
     console.log('Atribuindo valores...')
 // Capturando o valor dos inputs e convertendo em Float para armazenar no objeto
-    let nome = (alunoNome).value
-    let matricula = (alunoMatricula).value
-    let nota1 = parseFloat(alunoNota1).value
-    let nota2 = parseFloat(alunoNota2).value
-    let nota3 = parseFloat(alunoNota3).value
+    let nome = (alunoNome.value)
+    let matricula = (alunoMatricula.value)
+    let nota1 = parseFloat(alunoNota1.value)
+    let nota2 = parseFloat(alunoNota2.value)
+    let nota3 = parseFloat(alunoNota3.value)
     let aluno1 = new Aluno(nome, matricula, nota1, nota2, nota3)
-    let media = aluno1.calculaMedia(nota1, nota2, nota3).value
+    let media = (aluno1.calculaMedia(nota1, nota2, nota3))
     console.log(nota1)
     console.log(nota2)
     console.log(nota3)
@@ -74,6 +75,3 @@ cleanerButton.addEventListener('click', function(){ // Método para limpar o for
     nota2.value = ""
     nota3.value = ""
 })
-// OBS: Houve  um problema grave na execução do código no navegador.
-// A classe não é retornada no conforme o usuário pressiona "Confirmar", o algoritmo vai repetindo a mesma coisa infinitamente ou até você fazer alguma alteração no script ou reiniciar a página.
-// Fazendo alguma alteração no script é como se mudasse o valor da classe.
