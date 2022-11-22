@@ -1,0 +1,81 @@
+*{ /* Alterar fonta da página */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 0;
+}
+#title{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    background-color: rebeccapurple ;
+    color: whitesmoke;
+}
+#container{ 
+    background-color: blueviolet;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 0ex 5ex 5ex 5ex;
+}
+#info-main{
+    text-align: justify;
+    color: whitesmoke;
+    padding: 10px;
+}
+#form{
+    padding: 5ex 0;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+.form-input{
+    border-color: blueviolet;
+    border-style: none none solid none;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    appearance: 0;
+    -moz-appearance: textfield; /* Tirar controle de input:number no Mozilla. */
+    padding: 2px;
+}
+.form-input::-webkit-inner-spin-button{ /* Tirar controle de input:number no Edge, Chrome, etc. */
+    appearance: 0;
+    -webkit-appearance: none;
+}
+.form-input-reg{
+    width: 255px;
+}
+.form-button{
+    margin: 5px 0 0;
+    padding: 4px;
+    border: solid 1px blueviolet;
+    border-radius: 8px;
+    width: 125px;
+    background-color: whitesmoke;
+}
+#calc-button:hover{
+    background-color: rgb(3, 182, 3);
+    color:white;
+}
+#cleaner-button:hover{
+    background-color: rgb(223, 13, 13);
+    color:white;
+}
+table{
+    background: whitesmoke;
+   
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+}
+#table{
+    padding-top: 5ex;
+}
+#footer{
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
