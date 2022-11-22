@@ -30,12 +30,12 @@ class Aluno { // Classe Aluno desenvolvida em sala de aula
 
 // Capturando variáveis nota1, nota2, nota3, nome, matricula e botões
 
-let alunoNome = document.querySelector("#nome").value
-let alunoMatricula = document.querySelector("#matricula").value
-let alunoNota1 = document.querySelector("#nota1").value
+let alunoNome = document.querySelector("#nome")
+let alunoMatricula = document.querySelector("#matricula")
+let alunoNota1 = document.querySelector("#nota1")
 console.log(alunoNota1, alunoNome)
-let alunoNota2 = document.querySelector("#nota2").value
-let alunoNota3= document.querySelector("#nota3").value
+let alunoNota2 = document.querySelector("#nota2")
+let alunoNota3= document.querySelector("#nota3")
 let calcButton = document.querySelector('#calc-button')
 let cleanerButton = document.querySelector('#cleaner-button')
 let toTable = document.querySelector("#build-table")
@@ -47,13 +47,13 @@ let toTable = document.querySelector("#build-table")
 calcButton.addEventListener('click', function(event){  // Ler click no botão Confirmar
     console.log('Atribuindo valores...')
 // Capturando o valor dos inputs e convertendo em Float para armazenar no objeto
-    let nome = (alunoNome)
-    let matricula = (alunoMatricula)
-    let nota1 = parseFloat(alunoNota1)
-    let nota2 = parseFloat(alunoNota2)
-    let nota3 = parseFloat(alunoNota3)
+    let nome = (alunoNome).value
+    let matricula = (alunoMatricula).value
+    let nota1 = parseFloat(alunoNota1).value
+    let nota2 = parseFloat(alunoNota2).value
+    let nota3 = parseFloat(alunoNota3).value
     let aluno1 = new Aluno(nome, matricula, nota1, nota2, nota3)
-    let media = aluno1.calculaMedia(nota1, nota2, nota3)
+    let media = aluno1.calculaMedia(nota1, nota2, nota3).value
     console.log(nota1)
     console.log(nota2)
     console.log(nota3)
@@ -77,4 +77,3 @@ cleanerButton.addEventListener('click', function(){ // Método para limpar o for
 // OBS: Houve  um problema grave na execução do código no navegador.
 // A classe não é retornada no conforme o usuário pressiona "Confirmar", o algoritmo vai repetindo a mesma coisa infinitamente ou até você fazer alguma alteração no script ou reiniciar a página.
 // Fazendo alguma alteração no script é como se mudasse o valor da classe.
-// Não sei se fazer algum array daria certo, não testei, tô com muito sono kk
